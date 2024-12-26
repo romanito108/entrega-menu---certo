@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import './Menu.css'
+import CartWidget from './CartWidget';
 const pages = ['Produtos', 'Preço'];
 const settings = ['Perfil', 'Conta', 'Menu', 'Logout'];
 
@@ -151,7 +152,10 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
             </Menu>
+
+            
           </Box>
+          <CartWidget />
         </Toolbar>
       </Container>
     </AppBar>
